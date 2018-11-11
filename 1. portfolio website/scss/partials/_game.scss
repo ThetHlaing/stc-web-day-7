@@ -1,0 +1,19 @@
+$primary-bg : #00536D;
+
+#board{
+    & > div{
+        display: flex;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    label{
+        display: inline-block;
+        width: 70px;
+        height:30px;
+        background-color:$primary-bg;
+        text-align: center;
+        color:#fff;
+        margin:5px;
+    }
+}

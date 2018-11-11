@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/game.js"></script>
+</head>
+
+<body>
+    <div><button id="btnRestart">Restart Game</button></div>
+    <div id="board">
+        <div>
+            <input type="checkbox" value=1 id="index1" /><label for="index1"></label>
+            <input type="checkbox" value=2 id="index2" /><label for="index2"></label>
+            <input type="checkbox" value=3 id="index3" /><label for="index3"></label>
+        </div>
+        <div>
+            <input type="checkbox" value=4 id="index4" /><label for="index4"></label>
+            <input type="checkbox" value=5 id="index5" /><label for="index5"></label>
+            <input type="checkbox" value=6 id="index6" /><label for="index6"></label>
+        </div>
+        <div>
+            <input type="checkbox" value=7 id="index7" /><label for="index7"></label>
+            <input type="checkbox" value=8 id="index8" /><label for="index8"></label>
+            <input type="checkbox" value=9 id="index9" /><label for="index9"></label>
+        </div>
+    </div>
+    <div>Player <span class='currentPlayer'></span>'s turn</div>
+    <script>
+        gameController.init();
+        
+    </script>
+      <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                  console.log('Service Worker Registered');
+            });
+  
+          navigator.serviceWorker.ready.then(function(registration) {
+             console.log('Service Worker Ready');
+          });
+        }
+      </script>
+</body>
+
+</html>
